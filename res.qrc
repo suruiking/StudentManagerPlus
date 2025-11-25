@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/0dc404d6241b2955f7b66434b0e869f8_1577278963761351415.jpg</file>
+        <file>res/icons8--50 (2).png</file>
+        <file>res/icons8--50 (3).png</file>
+        <file>res/icons8--50 (4).png</file>
+        <file>res/icons8--50 (5).png</file>
+        <file>res/icons8--50.png</file>
+        <file>qss/wechat_fresh.qss</file>
+        <file>res/chevron-down.png</file>
+        <file>res/chevron-right.png</file>
+        <file>res/tubiao.webp</file>
+    </qresource>
+</RCC>

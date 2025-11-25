@@ -1,0 +1,223 @@
+
+/* ===========================
+   WeChat Fresh Theme (Qt QSS)
+   =========================== */
+
+* {
+    font-family: "Microsoft YaHei", "Segoe UI", "PingFang SC", sans-serif;
+    font-size: 14px;
+    color: #1f2329;
+}
+
+QWidget { background: #f6f7fb; }
+
+QStackedWidget, QFrame, QGroupBox, QScrollArea, QScrollArea > QWidget {
+    background: transparent;
+    border: none;
+}
+
+/* Titles */
+QLabel#titleLabel, QLabel[role="title"] {
+    font-size: 20px; font-weight: 700; color: #111317;
+}
+QLabel[role="subtitle"] { font-size: 13px; color: #6b7280; }
+
+/* Buttons */
+QPushButton {
+    background: #07c160;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 14px;
+    min-height: 30px;
+}
+QPushButton:hover { background: #06ad56; }
+QPushButton:pressed { background: #059a4c; }
+QPushButton:disabled { background: #cdd3d8; color: #8a9096; }
+
+QPushButton[role="secondary"], QPushButton#cancelButton, QPushButton#btnCancel {
+    background: white;
+    color: #1f2329;
+    border: 1px solid #e5e7eb;
+}
+QPushButton[role="secondary"]:hover { background: #f3f4f6; }
+
+QPushButton[role="danger"], QPushButton#deleteButton, QPushButton#btnRemoveCourse {
+    background: #ff4d4f; color: white;
+}
+QPushButton[role="danger"]:hover { background: #e64749; }
+QPushButton[role="danger"]:pressed { background: #cc3f41; }
+
+QToolButton {
+    background: transparent; border: none; padding: 6px; border-radius: 6px;
+}
+QToolButton:hover { background: rgba(0,0,0,0.05); }
+QToolButton:pressed { background: rgba(0,0,0,0.1); }
+
+/* Inputs */
+QLineEdit, QTextEdit, QPlainTextEdit, QSpinBox, QDoubleSpinBox,
+QDateEdit, QTimeEdit, QDateTimeEdit, QComboBox {
+    background: white;
+    border: 1px solid #dfe3e8;
+    border-radius: 8px;
+    padding: 6px 10px;
+    selection-background-color: #c8f5dd;
+}
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus,
+QSpinBox:focus, QDoubleSpinBox:focus, QDateEdit:focus,
+QTimeEdit:focus, QDateTimeEdit:focus, QComboBox:focus {
+    border: 1px solid #07c160;
+    background: #fbfffd;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left: 1px solid #e5e7eb;
+    background: transparent;
+}
+
+QComboBox {
+    padding-right: 34px;
+}
+/* 稳定的小下三角 ▼ */
+QComboBox::down-arrow {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #07c160;
+    margin-right: 8px;
+}
+
+
+/* Calendar */
+QCalendarWidget QWidget { background: white; }
+QCalendarWidget QAbstractItemView {
+    selection-background-color: #07c160;
+    selection-color: white; outline: none;
+}
+
+/* Tabs */
+QTabBar::tab {
+    background: transparent; color: #6b7280;
+    padding: 8px 14px; border-radius: 8px; margin: 4px;
+}
+QTabBar::tab:selected {
+    background: white; color: #07c160; font-weight: 600;
+}
+QTabBar::tab:hover { background: rgba(255,255,255,0.7); }
+QTabWidget::pane { border: none; background: transparent; }
+
+/* Tables */
+QTableWidget, QTableView {
+    background: white;
+    border: 1px solid #e8ebef;
+    border-radius: 10px;
+    gridline-color: #eef1f4;
+    selection-background-color: #e8fbf1;
+    selection-color: #1f2329;
+    outline: none;
+}
+QHeaderView::section {
+    background: #f3f5f7; color: #5c6370;
+    padding: 6px; border: none;
+    border-right: 1px solid #e8ebef;
+    border-bottom: 1px solid #e8ebef;
+    font-weight: 600;
+}
+QTableWidget::item, QTableView::item { padding: 6px; border: none; }
+QTableWidget::item:selected, QTableView::item:selected { background: #c8f5dd; }
+
+/* Lists */
+QListWidget, QTreeWidget {
+    background: white;
+    border: 1px solid #e8ebef;
+    border-radius: 10px;
+    padding: 6px; outline: none;
+}
+QListWidget::item, QTreeWidget::item {
+    padding: 8px; margin: 4px; border-radius: 8px;
+}
+QListWidget::item:hover, QTreeWidget::item:hover { background: #f3f4f6; }
+QListWidget::item:selected, QTreeWidget::item:selected {
+    background: #e8fbf1; color: #111317;
+}
+QListWidget#honorListWidget::item {
+    width: 150px; height: 140px; text-align: center;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background: transparent; width: 10px; margin: 6px 2px;
+}
+QScrollBar::handle:vertical {
+    background: #d8dde3; min-height: 30px; border-radius: 5px;
+}
+QScrollBar::handle:vertical:hover { background: #c3c9d0; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0; background: transparent;
+}
+QScrollBar:horizontal {
+    background: transparent; height: 10px; margin: 2px 6px;
+}
+QScrollBar::handle:horizontal {
+    background: #d8dde3; min-width: 30px; border-radius: 5px;
+}
+QScrollBar::handle:horizontal:hover { background: #c3c9d0; }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0; background: transparent;
+}
+
+/* Cards */
+QGroupBox {
+    background: white;
+    border: 1px solid #e8ebef;
+    border-radius: 12px;
+    margin-top: 12px;
+    padding: 10px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin; left: 12px; top: 0px;
+    padding: 0 6px; color: #111317; font-weight: 600; background: white;
+}
+
+/* Dialogs */
+QDialog, QMessageBox { background: #f6f7fb; }
+QDialog QPushButton, QMessageBox QPushButton { min-width: 80px; }
+
+/* Menus */
+QMenu {
+    background: white; border: 1px solid #e5e7eb;
+    border-radius: 8px; padding: 6px;
+}
+QMenu::item { padding: 6px 18px; border-radius: 6px; }
+QMenu::item:selected { background: #e8fbf1; }
+
+/* Status/Toolbar */
+QStatusBar { background: white; border-top: 1px solid #e5e7eb; }
+QToolBar { background: white; border: none; spacing: 8px; padding: 6px; }
+
+/* Charts */
+QChartView {
+    background: white;
+    border: 1px solid #e8ebef;
+    border-radius: 12px;
+}
+
+/* Login tweaks */
+QWidget#LoginDialog { background: white; }
+QLineEdit#userEdit, QLineEdit#passwordEdit {
+    min-height: 34px; font-size: 15px;
+}
+QPushButton#loginButton {
+    min-height: 36px; font-size: 16px; font-weight: 600;
+}
+
+/* Schedule */
+QTableWidget#tableWidgetSchedule::item { font-size: 13px; }
+
+/* Settings */
+QLineEdit#oldPasswordEdit, QLineEdit#newPasswordEdit, QLineEdit#confirmPasswordEdit {
+    letter-spacing: 1px;
+}

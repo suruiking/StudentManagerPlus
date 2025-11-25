@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SystemSettingsWidget</class>
+ <widget class="QWidget" name="SystemSettingsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>系统设置</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <!-- 数据库设置分组 -->
+   <item>
+    <widget class="QGroupBox" name="dbGroupBox">
+     <property name="title">
+      <string>数据库设置</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_db">
+      <item row="0" column="0">
+       <widget class="QLabel" name="dbPathLabel">
+        <property name="text">
+         <string>数据库路径：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="dbPathLineEdit">
+        <property name="placeholderText">
+         <string>选择或输入数据库文件路径</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="browseButton">
+        <property name="text">
+         <string>浏览...</string>
+        </property>
+        <property name="minimumWidth">
+         <number>80</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <!-- 密码设置分组 -->
+   <item>
+    <widget class="QGroupBox" name="passwordGroupBox">
+     <property name="title">
+      <string>密码设置</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_pwd">
+      <item row="0" column="0">
+       <widget class="QLabel" name="oldPasswordLabel">
+        <property name="text">
+         <string>旧密码：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLineEdit" name="oldPasswordLineEdit">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="0">
+       <widget class="QLabel" name="newPasswordLabel">
+        <property name="text">
+         <string>新密码：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLineEdit" name="newPasswordLineEdit">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+
+      <item row="2" column="0">
+       <widget class="QLabel" name="confirmPasswordLabel">
+        <property name="text">
+         <string>确认新密码：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QLineEdit" name="confirmPasswordLineEdit">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <!-- 其他设置分组 -->
+   <item>
+    <widget class="QGroupBox" name="otherGroupBox">
+     <property name="title">
+      <string>其他设置</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_other">
+      <item>
+       <widget class="QCheckBox" name="cacheCheckBox">
+        <property name="text">
+         <string>启用登录信息缓存（记住账号/密码）</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="versionInfoTextEdit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="minimumHeight">
+         <number>80</number>
+        </property>
+        <property name="plainText">
+         <string>原神大学管理系统 1.0
+开发环境：Qt 6.6，Qt Creator 12.0.2，Windows 10</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <!-- 底部保存按钮 -->
+   <item>
+    <layout class="QHBoxLayout" name="bottomLayout">
+     <item>
+      <spacer name="horizontalSpacer_bottom">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveButton">
+       <property name="text">
+        <string>保存设置</string>
+       </property>
+       <property name="minimumWidth">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

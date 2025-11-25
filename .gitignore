@@ -1,0 +1,73 @@
+# Qt 编译文件
+build/
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+*.qmake.cache
+
+# 编译输出
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Qt Creator 文件
+*.autosave
+*.creator
+*.creator.user
+*.creator.user.*
+*.files
+*.includes
+*.config
+
+# MOC 生成文件
+moc_*.cpp
+moc_*.h
+ui_*.h
+qrc_*.cpp
+
+# 预编译头文件
+*.pch
+*.gch
+
+# 调试文件
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# 数据库文件（包含用户数据，不应上传）
+*.db
+*.sqlite
+*.sqlite3
+Manager.db
+
+# 配置文件（可能包含敏感信息）
+config.ini
+*.ini
+
+# 临时文件
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# IDE 文件
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 日志文件
+*.log
+
+# 测试文件
+*.test
+

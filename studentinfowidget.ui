@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StudentInfoWidget</class>
+ <widget class="QWidget" name="StudentInfoWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>929</width>
+    <height>614</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生信息管理</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_root">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_toolbar">
+     <item>
+      <widget class="QPushButton" name="btnadd">
+       <property name="toolTip">
+        <string>添加一条学生记录</string>
+       </property>
+       <property name="text">
+        <string>新增学生</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btndeleteLine">
+       <property name="toolTip">
+        <string>删除当前选中行</string>
+       </property>
+       <property name="text">
+        <string>删除当前行</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btndeleteItem">
+       <property name="toolTip">
+        <string>删除表格中选中的记录</string>
+       </property>
+       <property name="text">
+        <string>删除选中项</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_toolbar">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelSearch">
+       <property name="text">
+        <string>关键字：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditSearch">
+       <property name="placeholderText">
+        <string>按姓名 / 学号搜索</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSearch">
+       <property name="text">
+        <string>搜索</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QSplitter" name="splitterMain">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QGroupBox" name="groupBoxTable">
+      <property name="title">
+       <string>学生列表</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_table">
+       <item>
+        <widget class="QTableView" name="tableViewStudents">
+         <property name="minimumSize">
+          <size>
+           <width>600</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>600</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="sortingEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="rightPanel">
+      <layout class="QVBoxLayout" name="verticalLayout_right">
+       <item>
+        <widget class="QGroupBox" name="groupBoxDetail">
+         <property name="title">
+          <string>学生详细信息</string>
+         </property>
+         <layout class="QFormLayout" name="formLayout_detail">
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelId">
+            <property name="text">
+             <string>学号：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEditId">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelName">
+            <property name="text">
+             <string>姓名：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEditName">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="labelGender">
+            <property name="text">
+             <string>性别：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEditGender">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="labelClass">
+            <property name="text">
+             <string>班级：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lineEditClass">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="labelPhone">
+            <property name="text">
+             <string>生日：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="lineEditBriday">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBoxPhoto">
+         <property name="title">
+          <string>照片预览</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_photo">
+          <item>
+           <widget class="QLabel" name="labelPhoto">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="text">
+             <string>无照片</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnChangePhoto">
+            <property name="text">
+             <string>更换照片...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_right">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

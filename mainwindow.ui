@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>38</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QToolButton" name="btnxueyuan">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>95</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>学员信息</string>
+         </property>
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/res/icons8--50 (5).png</normaloff>:/res/icons8--50 (5).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btnkecheng">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>95</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>课程安排</string>
+         </property>
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/res/icons8--50 (3).png</normaloff>:/res/icons8--50 (3).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btncaiwu">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>95</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>95</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>财务</string>
+         </property>
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/res/icons8--50 (2).png</normaloff>:/res/icons8--50 (2).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btnrongyu">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>95</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>荣誉墙</string>
+         </property>
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/res/icons8--50.png</normaloff>:/res/icons8--50.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btnshezhi">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>95</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>系统设置</string>
+         </property>
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/res/icons8--50 (4).png</normaloff>:/res/icons8--50 (4).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <widget class="StudentInfoWidget" name="pagexueyuan"/>
+      <widget class="ScheduleWidget" name="pagekecheng"/>
+      <widget class="FinanacialWidget" name="pagecaiwu"/>
+      <widget class="HonorWallWidget" name="pagerongyu"/>
+      <widget class="SystemSettingsWidget" name="pageshezhi"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StudentInfoWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">studentinfowidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ScheduleWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">schedulewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FinanacialWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">finanacialwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HonorWallWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">honorwallwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SystemSettingsWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">systemsettingswidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

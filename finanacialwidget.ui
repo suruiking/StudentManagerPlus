@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FinanacialWidget</class>
+ <widget class="QWidget" name="FinanacialWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1078</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>财务</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_root">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_top">
+     <property name="spacing">
+      <number>8</number>
+     </property>
+     <property name="margin" stdset="0">
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="labelStudent">
+       <property name="text">
+        <string>学生姓名:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="studentComboBox"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelStartDate">
+       <property name="text">
+        <string>起始日期:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="startDateEdit">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelEndDate">
+       <property name="text">
+        <string>结束日期:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="endDateEdit">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_top">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>30</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteButton">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editButton">
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_middle">
+     <property name="spacing">
+      <number>8</number>
+     </property>
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="minimumSize">
+        <size>
+         <width>550</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <column>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>学生名字</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>缴费日期</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>金额</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>支付类型</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>备注</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <widget class="QChartView" name="pieChartView">
+       <property name="minimumSize">
+        <size>
+         <width>260</width>
+         <height>250</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>448</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QChartView" name="chartView"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts/QChartView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
